@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <title>Détails</title>
+    <meta name="description" content="description de la page"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta property="og:site_name" content="RTL à l'infini" />
+    <meta property="fb:app_id" content="144827305611486" />
+    <meta property='og:locale' content='fr_FR' />
+    <meta property="og:type" content="video.tv_show" />
+    <link rel="icon" href="assets/images/favicon.ico"/>
+    <link rel="stylesheet" href="assets/css/ott-style.css">
+    <link rel="stylesheet" href="assets/css/ott-second.css">
+    <link rel="stylesheet" href="assets/css/ott-res.css">
+    <link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700' rel='stylesheet' type='text/css'>
+</head>
+<body id="mod">
+	
+<!-- Google Tag Manager -->
+<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-KPKMGD"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-KPKMGD');</script>
+<!-- End Google Tag Manager -->
+
+<div class="cookie-verif">
+    <h4>Pour rendre votre visite plus agréable RTL.be utilise des cookies</h4>
+
+    <p>En consultant notre site, vous acceptez nos cookies strictement nécessaires à la navigation</p>
+
+    <p>Vous pouvez modifier les paramètres des cookies à tout moment. <a href="//www.rtl.be/rtlbelgium/legal/cookie/">En
+        savoir plus.</a></p>
+    <button>Ne plus afficher ce message</button>
+
+</div>
+<div class="modal loca" id="modal-tvod">
+    <div class="modal-overlay modal-toggle"></div>
+    <div class="modal-wrapper modal-transition">
+        <div class="modal-header">
+            <button class="modal-close modal-toggle"></button>
+            <h2 class="modal-heading">vous desirez regarder ce contenu?</h2>
+        </div>
+        <div class="modal-body">
+            <div class="modal-content">
+                <div class="modal-box subscription" style="display: none;">
+                    <p class="rtl-selection-modal" style="display: none;">
+                        Ce titre est disponible dans un abonnement : <span class="available-saison-pass-big rtl-selection"></span>
+                    </p>
+                    <p class="rtl-pass-modal" style="display: none;">
+                        Ce titre est disponible dans un abonnement : <span class="available-saison-pass-big rtl-pass"></span>
+                    </p>
+                    <div class="small-link">       
+                        <a href="connection/abonner.html">Comment souscrire à l'abonnement à partir de seulement
+                        <span class="subscription-price"></span>&nbsp;€/mois ?</a>
+						</div>
+						<div class="big-link">       
+                        <a href="connection/mise_a_jour_abonnement.html">Souscrire à une formule d’abonnement à partir de
+                        <span class="subscription-price"></span>&nbsp;€/mois</a>	
+                        </div>
+                    <div class="clear"></div>
+                </div>
+                <div class="modal-box location">
+                    <div class="loca">
+                        <p>Ce titre est disponible à la location (48h) à <span class="vod-price"></span><img
+                                src="assets/images/credit@2X.png" class="credit" alt="credit"/></p>
+                                
+                          <div class="small-link">       
+                        <a href="connection/recharger_mes_credits.html">Comment acheter des crédits</a>
+						</div>
+						<div class="big-link">       
+                        <a href="connection/recharger_compte.html">Recharger facilement votre portefeuille virtuel</a>
+						</div>
+
+                        <div class="modal-data">
+                            Crédit disponible
+                            <div class="data-money">0<img src="assets/images/credit@2X.png" alt="credit"/></div>
+                        </div>
+                        <div class="play-loc"></div>
+                       
+                    </div>
+                    
+                    <div class="conf" style="display: none">
+                        <p>Voulez-vous confirmer votre location ?</p>
+                        <button class="next">je confirme</button>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+                 <div id="less-credit" style="display:none;">
+                        <h4><font color="red">Votre crédit est insuffisant. Veuillez recharger votre compte.</font></h4>
+                        </div>
+                <div class="modal-box not-available" style="display: none;">
+                    Ce titre n'est actuellement pas disponible a la location
+                </div>
+                <div class="modal-loader" style="display: none">
+                    <div class="spinner">
+                        <div class="spinner-container container1">
+                            <div class="circle1"></div>
+                            <div class="circle2"></div>
+                            <div class="circle3"></div>
+                            <div class="circle4"></div>
+                        </div>
+                        <div class="spinner-container container2">
+                            <div class="circle1"></div>
+                            <div class="circle2"></div>
+                            <div class="circle3"></div>
+                            <div class="circle4"></div>
+                        </div>
+                        <div class="spinner-container container3">
+                            <div class="circle1"></div>
+                            <div class="circle2"></div>
+                            <div class="circle3"></div>
+                            <div class="circle4"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal loca" id="modal-connection">
+    <div class="modal-overlay modal-toggle"></div>
+    <div class="modal-wrapper modal-transition">
+        <div class="modal-header">
+            <button class="modal-close modal-toggle"></button>
+            <h2 class="modal-heading connection">Connectez-vous à RTL à l'infini</h2>
+        </div>
+        <div class="modal-body">
+            <div class="modal-content">
+                <div class="modal-box connection">
+                    <p>Vous avez déjà un compte? Connectez-vous.</p>
+                    <a href="connection/me_connecter.html">
+                        <div class="connect-modal">Me connecter</div>
+                    </a>
+
+                    <div class="clear"></div>
+                </div>
+                <div class="modal-box create">
+                    <p>Vous n’avez pas encore de compte? Inscrivez-vous.</p>
+                    <a href="connection/me_connecter.html#signUp">
+                        <div class="connect-modal">Créer un compte</div>
+                    </a>
+
+                    <div class="clear"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal loca" id="modal-install-chrome">
+    <div class="modal-overlay modal-toggle"></div>
+    <div class="modal-wrapper modal-transition">
+        <div class="modal-header">
+            <button class="modal-close modal-toggle"></button>
+            <h2 class="modal-heading connection">PROFITEZ D'UN COMFORT OPTIMAL</h2>
+        </div>
+        <div class="modal-body">
+            <div class="modal-content" style="text-align: center;">
+                <div class="modal-box connection">
+                    <h2 style="font-size: 24px;">La lecture de cette vidéo est uniquement disponible via le navigateur Chrome</h2>
+                    <a href="http://www.google.com.pk/chrome/browser/desktop/index.html" target="_blank" style="float: none;">
+                        <img src="assets/images/Chrome.png" style="width: 100px;" />
+                    </a>
+                    <div class="clear"></div>
+                    <a href="http://www.google.com.pk/chrome/browser/desktop/index.html" target="_blank" style="float: none; text-decoration: none;">
+                        <div style="float: none; width: 300px; background-size: 200% auto; background-position: 50% center; padding-right: 0px; text-align: center; margin: auto;" class="connect-modal">Téléchargement gratuitement Google Chrome</div>
+                    </a>
+                    <div class="clear"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal loca" id="modal-install-chrome-ie">
+    <div class="modal-overlay modal-toggle"></div>
+    <div class="modal-wrapper modal-transition">
+        <div class="modal-header">
+            <button class="modal-close modal-toggle"></button>
+            <h2 class="modal-heading connection">PROFITEZ D'UN COMFORT OPTIMAL</h2>
+        </div>
+        <div class="modal-body">
+            <div class="modal-content" style="text-align: center;">
+                <div class="modal-box connection">
+                    <h2 style="font-size: 24px;">La lecture de cette vidéo est uniquement disponible via le navigateur Chrome</h2>
+                    <a href="http://www.google.com.pk/chrome/browser/desktop/index.html" target="_blank" style="float: none;">
+                        <img src="assets/images/Chrome.png" style="width: 100px;" />
+                    </a>
+                    <a href="http://windows.microsoft.com/fr-FR/internet-explorer/download-ie" target="_blank" style="float: none; text-decoration: none;">
+                        <img src="assets/images/ielogo.png" style="width: 85px; margin-bottom: 10px;" />
+                    </a>
+                    <div class="clear"></div>
+					<a href="http://www.google.com.pk/chrome/browser/desktop/index.html" target="_blank" style="float: none; text-decoration: none;">
+						<div style="float: none; width: 300px; background-size: 200% auto; background-position: 50% center; padding-right: 0px; text-align: center; margin: auto;" class="connect-modal">Téléchargement gratuitement Google Chrome</div>
+					</a>
+                    <div class="clear"></div> <br/>
+					<a href="http://windows.microsoft.com/fr-FR/internet-explorer/download-ie" target="_blank" style="float: none; text-decoration: none;">
+						<div style="float: none; width: 200px; background-size: 200% auto; background-position: 50% center; padding-right: 0px; text-align: center; margin: auto;" class="connect-modal">Télécharger Internet Explorer</div>
+					</a>
+                </div>
+           </div>
+        </div>
+    </div>
+</div>
+<div class="modal loca" id="modal-download-app">
+    <div class="modal-overlay modal-toggle"></div>
+    <div class="modal-wrapper modal-transition">
+        <div class="modal-header">
+            <button class="modal-close modal-toggle"></button>
+            <h2 class="modal-heading connection">PROFITEZ D'UN COMFORT OPTIMAL</h2>
+        </div>
+        <div class="modal-body">
+            <div class="modal-content" style="text-align; center;">
+                <div class="modal-box connection">
+                    <h2 style="font-size: 24px;">La lecture est uniquement disponible avec l'App</h2>
+                    <a href="https://play.google.com/store/apps/details?id=com.booxmedia.rtlinfini" target="_blank">
+                        <img src="assets/images/playstore.jpg" />
+                    </a>
+                    <a href="https://itunes.apple.com/be/app/rtl-a-linfini/id950696444?mt=8" target="_blank">
+                        <img src="assets/images/appstore.jpg" />
+                    </a>
+                    <div class="clear"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<header></header>
+<div id="container">
+    <section id="show">
+        <section class="saison-content">
+            <div class="spinner">
+                <div class="spinner-container container1">
+                    <div class="circle1"></div>
+                    <div class="circle2"></div>
+                    <div class="circle3"></div>
+                    <div class="circle4"></div>
+                </div>
+                <div class="spinner-container container2">
+                    <div class="circle1"></div>
+                    <div class="circle2"></div>
+                    <div class="circle3"></div>
+                    <div class="circle4"></div>
+                </div>
+                <div class="spinner-container container3">
+                    <div class="circle1"></div>
+                    <div class="circle2"></div>
+                    <div class="circle3"></div>
+                    <div class="circle4"></div>
+                </div>
+            </div>
+        </section>
+        <section id="tabs-container">
+            <div class="spinner">
+                <div class="spinner-container container1">
+                    <div class="circle1"></div>
+                    <div class="circle2"></div>
+                    <div class="circle3"></div>
+                    <div class="circle4"></div>
+                </div>
+                <div class="spinner-container container2">
+                    <div class="circle1"></div>
+                    <div class="circle2"></div>
+                    <div class="circle3"></div>
+                    <div class="circle4"></div>
+                </div>
+                <div class="spinner-container container3">
+                    <div class="circle1"></div>
+                    <div class="circle2"></div>
+                    <div class="circle3"></div>
+                    <div class="circle4"></div>
+                </div>
+            </div>
+        </section>
+    </section>
+    <div class="clear"></div>
+</div>
+<footer></footer>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="assets/js/server.config.js"></script>
+<script src="assets/js/config.js"></script>
+<script src="assets/js/jwplayer/jwplayer.js"></script>
+<script src="assets/js/dash/0.6.0/vuplay.js"></script>
+<script src="assets/js/jquery.tooltipster.min.js"></script>
+<script src="assets/js/underscore.js"></script>
+<script src="assets/js/BooxApi.js"></script>
+<script src="assets/js/slider.js"></script>
+<script src="assets/js/twig.js/twig.min.js"></script>
+<script src="assets/js/isMobile.min.js"></script>
+<script src="assets/js/moment.js"></script>
+<script src="assets/js/Ott.js"></script>
+<script src="assets/js/ott-script.js"></script>
+<script src="assets/js/details.js"></script>
+<script src="assets/js/video-player.js"></script>
+<script src="assets/js/jquery.raty.js"></script>
+<script>
+$(window).unload(function() {
+    sessionStorage.removeItem('seasonGroup');
+	});
+    $(document).ready(function () {
+        $.preload(
+                'assets/images/connecth.png',
+                'assets/images/connecth.png',
+                'assets/images/connect.png',
+                'assets/images/logo.png',
+                'assets/images/logo-min.png',
+                'assets/images/logo-min@2X.png',
+                'assets/images/logo-p.png',
+                'assets/images/star-Y-half.png',
+                'assets/images/star-Y-on.png',
+                'assets/images/search-big.png',
+                'assets/images/help.png',
+                'assets/images/help-big.png',
+                'assets/images/play-loc-r.png',
+                'assets/images/play-epi-r.png',
+                'assets/images/helph.png'
+        );
+        $("head").append('<meta name="viewport" content="width=device-width, height=device-height,  initial-scale=1.0,user-scalable=0;">');
+        retina();
+		var ott = new Ott();
+        twig({ href: 'connection/header.html', load: function(template){
+			document.querySelector("header").outerHTML = template.render({ baseUrl: ott.RootUrl, isNative: ott.isNative });
+			
+			if (ott.isLogged()) {
+				$('.connected').show();
+				$('.not-connected').remove();
+			}
+			else {
+				$('.not-connected').show();
+				$('.connected').remove();
+			}
+		}});
+        
+        twig({ href: 'connection/footer.html', load: function(template){
+			document.querySelector("footer").outerHTML = template.render({ baseUrl: ott.RootUrl, isNative: ott.isNative });
+		}});
+        ott.getSlider(function (template) {
+            $('#slider').html(template);
+            e = $("#slider .item").length;
+            t = e - 1;
+            s = window.setInterval(i, n);
+            r();
+            u();
+            a();
+            slideInfinite();
+            search();
+        });
+        if (readCookie('cookieVerif') == null) {
+            $('.cookie-verif').show();
+            $('.cookie-verif button').click(function () {
+                createCookie('cookieVerif', true, 99);
+                $('.cookie-verif').hide();
+            });
+        }
+    });
+</script>
+</body>
+</html>
